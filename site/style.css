@@ -156,7 +156,10 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
 /* Responsive */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
-  .hero-art { min-height: 340px; width: 100%; max-width: 480px; margin: 0 auto; }
+  .hero-art { min-height: 300px; width: 100%; max-width: 480px; margin: 0 auto; }
+  .art-meeting { width: 42%; top: 0; left: 29%; }
+  .art-flag { width: 36%; left: 0; bottom: 0; }
+  .art-idea { width: 48%; right: 0; bottom: 0; }
   .gallery { columns: 2; }
   .nav-links { display: none; }
   .nav-cta { margin-left: auto; }
