@@ -40,7 +40,7 @@ images (see findings #9/#10).
 1. **No navigation** — only a floating logo, no anchors. → sticky pill nav
    (About / Work / Partners / Contact) + "Start a project" CTA.
 2. **No CTA or contact path anywhere.** → nav CTA + closing orange band with
-   email button. `hello@impacts.digital` is a **placeholder** — swap in the
+   email button. `support@impacts.digital` is a **placeholder** — swap in the
    real inbox (3 occurrences in `index.html`).
 3. **Content bug:** both stats (90 and 170+) were labeled "Brands and NGOs
    Amplified". → 90 = *social campaigns*, 170+ = *brands & NGOs*. No numbers
@@ -126,7 +126,7 @@ inside the `max-width: 900px` media query.
 
 ## TODO for the owner
 
-- Replace placeholder `hello@impacts.digital` (search in `index.html`).
+- Replace placeholder `support@impacts.digital` (search in `index.html`).
 - Decide on `www.` redirect.
 - `og:image` currently uses the logo — a dedicated 1200×630 social card
   would look better in link previews.
