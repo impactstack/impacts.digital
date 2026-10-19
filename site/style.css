@@ -77,9 +77,11 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
 
 /* Stats */
 .stats { background: var(--orange); color: var(--white); padding: 3.5rem 0; }
-.stats-inner { display: flex; align-items: center; gap: 3.5rem; flex-wrap: wrap; }
-.stats-lede { font-size: clamp(1.15rem, 2.2vw, 1.5rem); font-weight: 600; max-width: 24ch; flex: 1 1 260px; }
-.stat { flex: 0 1 auto; text-align: center; padding: 0 1.5rem; border-left: 1px solid rgba(255, 255, 255, 0.4); }
+.stats-inner { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 2.25rem; }
+.stats-lede { font-size: clamp(1.15rem, 2.2vw, 1.5rem); font-weight: 600; max-width: 30ch; }
+.stats-row { display: flex; justify-content: center; flex-wrap: wrap; }
+.stat { text-align: center; padding: 0 2.5rem; }
+.stat + .stat { border-left: 1px solid rgba(255, 255, 255, 0.4); }
 .stat-num { display: block; font-size: clamp(2.6rem, 6vw, 4rem); font-weight: 800; line-height: 1.1; }
 .stat-label { font-weight: 500; opacity: 0.95; }
 
@@ -110,7 +112,7 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
 
 /* Partners */
 .partners { padding: 5.5rem 0; background: var(--grey-bg); }
-.partners h2 { text-align: center; margin-top: 2.5rem; }
+.partners h2 { text-align: center; margin-top: 4.5rem; }
 .partners h2:first-child { margin-top: 0; }
 .logo-grid {
   display: grid;
@@ -158,8 +160,8 @@ h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin-bottom: 1rem; }
   .gallery { columns: 2; }
   .nav-links { display: none; }
   .nav-cta { margin-left: auto; }
-  .stats-inner { justify-content: center; text-align: center; }
-  .stat { border-left: 0; }
+  .stats-row { flex-direction: column; gap: 2rem; }
+  .stat + .stat { border-left: 0; }
 }
 @media (max-width: 560px) {
   .gallery { columns: 1; }
